@@ -17,7 +17,7 @@ const CursoController = {
       professor,
     });
 
-    fs.writeFileSync('../models/cursos.json', JSON.stringify(listaDeCursos));
+    fs.writeFileSync('./models/cursos.json', JSON.stringify(listaDeCursos));
 
     res.status(201).json({ message: 'Cadastro efetuado com sucesso!' });
   },
